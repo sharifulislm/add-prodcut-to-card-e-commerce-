@@ -10,6 +10,14 @@ const Card = () => {
    const [product , setProduct]=useState([]);
    
   const [cart , setCart]=useState([]);
+//   const [dalete , setelete]=useState([]);
+
+
+
+const deleteSelecteOne =(cart) => {
+    const RandomCart = Math.floor(Math.random() * cart.length);
+    console.log(RandomCart);
+}
 
 
 
@@ -62,7 +70,7 @@ const Card = () => {
                 
      
       
-           <button className='mt-5 mb-1'> CHOOSE 1FOR ME</button>
+           <button onClick={()=> deleteSelecteOne(cart)} className='mt-5 mb-1'> CHOOSE 1FOR ME</button>
            <button className='mb-4'> CHOOSE AGAIN </button>
            
           
