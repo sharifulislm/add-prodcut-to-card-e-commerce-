@@ -21,6 +21,7 @@ const SeleCart = (props) => {
       <div className=''>
        <h6>{name} <span className='icons'><AiFillDelete></AiFillDelete> </span> </h6>
        
+       
 
          
             

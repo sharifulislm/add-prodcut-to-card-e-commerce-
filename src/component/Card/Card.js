@@ -11,12 +11,22 @@ const Card = () => {
    
   const [cart , setCart]=useState([]);
 
+
+
    const ShowCart = (product)=> {
-       const newCart = [...cart,product];
-         setCart(newCart);
+            const newCart = [...cart,product];
+            if(newCart.length > 4){
+                alert("You can't take more then 4 item");
+
+                  
+                    }else {
+                        setCart(newCart);
+                    }
+          
 
 }
 
+    
 
 
 
@@ -46,7 +56,6 @@ const Card = () => {
             <div className='Card-contanier mt-5 card-box-right col-lg-3'>
             <h4 className='mt-4'> Selected Clothes</h4>
        {
-
   
            cart.map((cart) => (<SeleCart key={cart.id} cart={cart}> </SeleCart> ))
        }
@@ -55,6 +64,8 @@ const Card = () => {
       
            <button className='mt-5 mb-1'> CHOOSE 1FOR ME</button>
            <button className='mb-4'> CHOOSE AGAIN </button>
+           
+          
 
             </div>
             </div>
