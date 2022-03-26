@@ -16,7 +16,8 @@ const Card = () => {
          setCart(newCart);
 
 }
-console.log(cart.length)
+
+
 
 
    useEffect(() =>{
@@ -45,6 +46,8 @@ console.log(cart.length)
             <div className='Card-contanier mt-5 card-box-right col-lg-3'>
             <h4 className='mt-4'> Selected Clothes</h4>
        {
+
+  
            cart.map((cart) => (<SeleCart key={cart.id} cart={cart}> </SeleCart> ))
        }
                 

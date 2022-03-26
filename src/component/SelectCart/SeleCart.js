@@ -5,6 +5,8 @@ import { AiFillDelete } from 'react-icons/ai';
 const SeleCart = (props) => {
     const {cart}=props;
     const{name,id,picture} = cart;
+    
+
 
     
 
@@ -17,7 +19,7 @@ const SeleCart = (props) => {
       <img className='img-box rounded-circle' src={picture} alt="" /> 
       </div>
       <div className=''>
-       <h6>{name} <AiFillDelete></AiFillDelete>  </h6>
+       <h6>{name} <span className='icons'><AiFillDelete></AiFillDelete> </span> </h6>
        
 
          
