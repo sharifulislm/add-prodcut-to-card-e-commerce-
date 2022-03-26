@@ -1,4 +1,6 @@
 import React from 'react';
+import { BsFillCartFill } from 'react-icons/bs';
+
 import './Product.css'
 import { Button, Card } from 'react-bootstrap';
 
@@ -16,9 +18,9 @@ const{name,id,price,picture} = product;
             
             <Card.Img variant="top" src={picture} />
   <Card.Body>
-  <h4>{name}</h4>
-      <h5 className='text-danger'>  Price: {price} KD</h5>
-    <Button variant="primary">ADD TO CART  </Button>
+  <h4 className='mt-3'>{name}</h4>
+      <h5 className='text-danger mt-3'>  Price: {price} KD</h5>
+    <Button className='mt-5 mb1' variant="danger">ADD TO CART <BsFillCartFill></BsFillCartFill>  </Button>
   </Card.Body>
  
 
