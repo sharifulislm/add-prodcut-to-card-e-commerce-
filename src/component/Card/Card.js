@@ -3,7 +3,17 @@ import Product from '../Product/Product';
 import './Card.css'
 
 const Card = () => {
+
+    
    const [product , setProduct]=useState([]);
+   
+
+   const ShowCart = (product)=> {
+       console.log(product);
+
+}
+
+
    useEffect(() =>{
        fetch('data.json')
        .then(res => res.json())
@@ -20,7 +30,7 @@ const Card = () => {
               
                  <h3>Product</h3>
                  {
-                     product.map(product=> <Product key={product.id} product={product}> </Product>)
+                     product.map(product=> <Product  key={product.id} product={product} ShowCart={ShowCart}> </Product>)
                  }
 
           
@@ -29,6 +39,7 @@ const Card = () => {
           
             <div className='Card-contanier col-lg-3'>
                 <h4> Selected Clothes</h4>
+             
 
             </div>
             </div>
