@@ -1,0 +1,9 @@
+.img-box{
+    width:50px;
+}
+.select-box{
+    display: flex;
+    gap: 15px;
+   
+
+}

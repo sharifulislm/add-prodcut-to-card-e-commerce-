@@ -15,6 +15,8 @@ function App() {
 
 <Card> </Card>
 
+{/* cart.map((cart) => (<h2>{cart.name} </h2>) ) */}
+
     </div>
   );
 }

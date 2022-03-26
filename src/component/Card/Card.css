@@ -1,6 +1,13 @@
-.box-contanier {
+/* .box-contanier {
     background-color: aliceblue;
-}
+} */
 .row-box{
     gap: 25px;
 }
+
+.card-box-right{
+    background-color: aquamarine;
+    height: 600px;
+    border-radius: 42px 8px 10px 42px;
+}
+
