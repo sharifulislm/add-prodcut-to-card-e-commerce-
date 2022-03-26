@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+Kuwait Oyal Pharmacy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+assignmment-8 [Live project here](https://assignmment-8-from-sharifulislam.netlify.app/).
 
 ## Available Scripts
 
